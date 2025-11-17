@@ -155,79 +155,87 @@
   </div>
 
   <!-- Header -->
+ 
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg border-b border-slate-200">
-    <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-20 items-center justify-between">
+  <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-20 items-center justify-between">
+
+      <!-- Brand -->
+      <a href="#home" class="flex flex-shrink-2 items-center gap-3">
+
+        <!-- ⭐⭐ CHANGE LOGO HEIGHT & WIDTH HERE ⭐⭐ -->
+        <img 
+          src="assets/mutha reality name logo.png" 
+          alt="Pune Real Estate Logo" 
+          class="global-logo"
+          style="height: 220px; width: auto;" 
         
-        <!-- Brand -->
-        <a href="#home" class="flex flex-shrink-0 items-center gap-3">
-          <!-- Updated logo class -->
-          <img src="assets/mutha reality logos (1).svg" alt="Pune Real Estate Logo" class="global-logo">
-        
+        >
+        <!-- ⭐⭐ END OF LOGO SIZE SECTION ⭐⭐ -->
+
+      </a>
+
+      <!-- Desktop Navlinks -->
+      <div class="hidden md:flex md:items-center md:space-x-6">
+        <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Services</a>
+        <a href="#featured" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Featured</a>
+        <a href="#areas" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Areas</a>
+        <a href="#process" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Process</a>
+        <a href="#testimonials" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Testimonials</a>
+        <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">FAQs</a>
+        <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Contact</a>
+      </div>
+
+      <!-- Desktop CTAs -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:+918888933445" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-100 btn-hover">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.13 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.2a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92Z"/></svg>
+          Call
         </a>
-        
-        <!-- Desktop Navlinks -->
-        <div class="hidden md:flex md:items-center md:space-x-6">
-          <!-- Updated hover color and added hover class -->
-          <a href="#services" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Services</a>
-          <a href="#featured" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Featured</a>
-          <a href="#areas" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Areas</a>
-          <a href="#process" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Process</a>
-          <a href="#testimonials" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Testimonials</a>
-          <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">FAQs</a>
-          <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors nav-link-hover">Contact</a>
-        </div>
-        
-        <!-- Desktop CTAs -->
-        <div class="hidden md:flex items-center gap-3">
-          <!-- Added hover class -->
-          <a href="tel:+91XXXXXXXXXX" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-100 btn-hover">
-            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.13 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.2a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92Z"/></svg>
-            Call
-          </a>
-          <!-- Updated colors and added hover class -->
-          <a href="#enquire" id="open-lead" class="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-500/20 transition-all hover:bg-brand-700 hover:shadow-brand-500/30 btn-hover">
+
+        <a href="#enquire" id="open-lead" class="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-brand-500/20 transition-all hover:bg-brand-700 hover:shadow-brand-500/30 btn-hover">
+          Enquire Now
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-lg p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-800">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+          <svg class="h-6 w-6 hidden" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-white border-b border-slate-200 shadow-lg" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <a href="#services" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Services</a>
+        <a href="#featured" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Featured</a>
+        <a href="#areas" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Areas</a>
+        <a href="#process" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Process</a>
+        <a href="#testimonials" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Testimonials</a>
+        <a href="#faq" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">FAQs</a>
+        <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Contact</a>
+
+        <div class="border-t border-slate-200 pt-4 mt-4 flex flex-col gap-3">
+          <a href="#enquire" id="open-lead-mobile" class="w-full text-center rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-brand-500/20 transition-all hover:bg-brand-700 hover:shadow-brand-500/30">
             Enquire Now
           </a>
-        </div>
 
-        <!-- Mobile Menu Button -->
-        <div class="md:hidden">
-          <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-lg p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-800" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
-            <svg class="h-6 w-6 hidden" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-          </button>
-        </div>
-
-      </div>
-      
-      <!-- Mobile Menu -->
-      <div class="md:hidden hidden bg-white border-b border-slate-200 shadow-lg" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-          <!-- Updated hover colors -->
-          <a href="#services" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Services</a>
-          <a href="#featured" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Featured</a>
-          <a href="#areas" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Areas</a>
-          <a href="#process" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Process</a>
-          <a href="#testimonials" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Testimonials</a>
-          <a href="#faq" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">FAQs</a>
-          <a href="#contact" class="block rounded-md px-3 py-2 text-base font-medium text-slate-700 hover:bg-slate-50 hover:text-brand-600">Contact</a>
-          <div class="border-t border-slate-200 pt-4 mt-4 flex flex-col gap-3">
-            <!-- Updated colors and added hover class -->
-            <a href="#enquire" id="open-lead-mobile" class="w-full text-center rounded-lg bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-brand-500/20 transition-all hover:bg-brand-700 hover:shadow-brand-500/30 btn-hover">
-              Enquire Now
-            </a>
-            <!-- Added hover class -->
-             <a href="tel:+91XXXXXXXXXX" class="w-full text-center inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-100 btn-hover">
-              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.13 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.2a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92Z"/></svg>
-              Call Now
-            </a>
-          </div>
+          <a href="tel:+918888933445" class="w-full text-center inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-100">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.67A2 2 0 0 1 4.13 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.2a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92Z"/></svg>
+            Call Now
+          </a>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+
+  </nav>
+</header>
+
 
   <main>
     <!-- Hero Section -->
@@ -246,7 +254,7 @@
             Find The Right Property, Faster.
           </h1>
           <p class="mt-6 text-lg max-w-2xl mx-auto text-slate-200 reveal-on-scroll" style="animation-delay: 200ms;">
-            Residential and commercial brokerage for Buy, Sell, Rent, & Lease with verified listings, quick site visits, and end‑to‑end expert assistance.
+           Trusted Residential and Commercial Property Services with verified listings, quick site visits, and complete assistance for buying, selling, renting, and leasing.
           </p>
 <div class="mt-6 flex flex-wrap gap-3 justify-center reveal-on-scroll" style="animation-delay:300ms;">
 
@@ -284,42 +292,72 @@
     </section>
     
     <!-- Builder Logo Section -->
-    <section class="py-16 sm:py-24" id="builders">
-      <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">We Work With Pune's Best</h2>
-          <p class="mt-4 text-lg text-slate-600">Proud partners with the most trusted builders and developers in the region.</p>
-        </div>
-        <div class="mt-12 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
-          <!-- Logo 1 -->
-          <!-- Added hover class -->
-          <div class="flex justify-center items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all builder-logo-hover">
-            <!-- Updated logo class -->
-            <img src="assets/hiranandani.jpg" alt="hiranandani" class="global-logo">
-          </div>
-          <!-- Logo 2 -->
-          <div class="flex justify-center items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all builder-logo-hover">
-            <img src="assets/kolte patil.png" alt="KOLTE PATIL" class="global-logo">
-          </div>
-          <!-- Logo 3 -->
-          <div class="flex justify-center items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all builder-logo-hover">
-            <img src="assets/nyati.jpg" alt="nyati" class="global-logo">
-          </div>
-          <!-- Logo 4 -->
-          <div class="flex justify-center items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all builder-logo-hover">
-            <img src="assets/LODHA.png" alt="LODHA" class="global-logo">
-          </div>
-          <!-- Logo 5 -->
-          <div class="flex justify-center items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all builder-logo-hover">
-            <img src="assets/MAHINDRA.png" alt="MAHINDRA" class="global-logo">
-          </div>
-          <!-- Logo 6 -->
-          <div class="flex justify-center items-center grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all builder-logo-hover">
-            <img src="assets/godrej.png" alt="GODREJ" class="global-logo">
-          </div>
-        </div>
+<section class="py-20 sm:py-28 bg-gradient-to-b from-[#FFF9F2] to-[#F3E8D8]" id="builders">
+  <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Heading -->
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold tracking-tight" style="color:#57452D;">
+        We Work With Pune's Best
+      </h2>
+      <p class="mt-4 text-lg font-medium" style="color:black">
+        Proud partners with the most trusted builders and developers in the region.
+      </p>
+    </div>
+
+    <!-- Marquee -->
+    <div class="mt-10 overflow-hidden relative">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
+        <span class="text-xl font-semibold mx-10" style="color:#0c0700;">
+          Premium Developers • Trusted Builders • Partners Across Pune • Commercial & Residential Excellence
+        </span>
+      </marquee>
+    </div>
+
+    <!-- Logos -->
+    <div class="mt-16 grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-6">
+
+      <!-- Logo 1 -->
+      <div class="flex justify-center items-center transition-all hover:scale-110">
+        <img src="assets/hiranandani.jpg" alt="hiranandani" 
+             class="w-28 h-auto drop-shadow-md">
       </div>
-    </section>
+
+      <!-- Logo 2 -->
+      <div class="flex justify-center items-center transition-all hover:scale-110">
+        <img src="assets/kolte patil.png" alt="KOLTE PATIL" 
+             class="w-28 h-auto drop-shadow-md">
+      </div>
+
+      <!-- Logo 3 (NYATI - now normal) -->
+      <div class="flex justify-center items-center transition-all hover:scale-110">
+        <img src="assets/nyati.jpg" alt="nyati" 
+             class="w-28 h-auto drop-shadow-md">
+      </div>
+
+      <!-- Logo 4 -->
+      <div class="flex justify-center items-center transition-all hover:scale-110">
+        <img src="assets/LODHA.png" alt="LODHA" 
+             class="w-28 h-auto drop-shadow-md">
+      </div>
+
+      <!-- Logo 5 -->
+      <div class="flex justify-center items-center transition-all hover:scale-110">
+        <img src="assets/MAHINDRA.png" alt="MAHINDRA" 
+             class="w-28 h-auto drop-shadow-md">
+      </div>
+
+      <!-- Logo 6 -->
+      <div class="flex justify-center items-center transition-all hover:scale-110">
+        <img src="assets/godrej.png" alt="GODREJ" 
+             class="w-28 h-auto drop-shadow-md">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Lead Form Section -->
     <section class="py-16 sm:py-24 bg-white" id="enquire">
@@ -387,64 +425,102 @@
     </section>
     
     <!-- Services Section -->
+   
     <section class="py-16 sm:py-24" id="services">
-      <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto">
-          <!-- Updated text color -->
-          <p class="text-sm font-semibold uppercase tracking-wider text-brand-600 reveal-on-scroll">Our Services</p>
-          <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900 reveal-on-scroll" style="animation-delay: 100ms;">End-to-End Property Solutions</h2>
-          <p class="mt-4 text-lg text-slate-600 reveal-on-scroll" style="animation-delay: 200ms;">
-            We handle every detail, from finding the perfect property to managing the paperwork, ensuring a seamless experience.
-          </p>
+  <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto">
+      <p class="text-sm font-semibold uppercase tracking-wider reveal-on-scroll" style="color:#57452D;">
+        Our Services
+      </p>
+
+      <h2 class="mt-2 text-3xl sm:text-4xl font-extrabold reveal-on-scroll" style="color:#57452D; animation-delay: 100ms;">
+        End-to-End Property Solutions
+      </h2>
+
+      <p class="mt-4 text-lg reveal-on-scroll" style="color:#57452D; animation-delay: 200ms;">
+        Expert guidance for buyers, sellers, and investors—transparent, fast, and fully managed.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- BUY PROPERTY -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:border-brand-500 reveal-on-scroll card-hover">
+        <div class="w-12 h-12 rounded-lg bg-[#F4EDE3] flex items-center justify-center">
+          <!-- New Home Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#57452D" stroke-width="1.7">
+            <path d="M3 10L12 3l9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10z"/>
+          </svg>
         </div>
-        
-        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Service: Buy -->
-          <!-- Updated colors and added hover class -->
-          <div class="bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:border-brand-500 border border-slate-200 reveal-on-scroll card-hover">
-            <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" /></svg>
-            </div>
-            <h3 class="mt-5 text-xl font-bold text-slate-900">Buy Property</h3>
-            <p class="mt-2 text-slate-600">Shortlisted, verified options with guided site visits and expert negotiation support.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">New Launch</span>
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Resale</span>
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Investments</span>
-            </div>
-          </div>
-          
-          <!-- Service: Sell -->
-          <div class="bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:border-brand-500 border border-slate-200 reveal-on-scroll card-hover" style="animation-delay: 150ms;">
-            <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6A.75.75 0 012.25 5.25v-.75m0 0A.75.75 0 013 4.5A.75.75 0 013.75 3.75m0 0A.75.75 0 014.5 4.5A.75.75 0 013.75 5.25m0 0v.75A.75.75 0 013 6A.75.75 0 012.25 5.25v-.75m0 0A.75.75 0 013 4.5A.75.75 0 013.75 3.75M3.75 3.75h16.5c.621 0 1.125.504 1.125 1.125v12.75c0 .621-.504 1.125-1.125 1.125H3.75c-.621 0-1.125-.504-1.125-1.125V4.875c0-.621.504-1.125 1.125-1.125z" /></svg>
-            </div>
-            <h3 class="mt-5 text-xl font-bold text-slate-900">Sell Property</h3>
-            <p class="mt-2 text-slate-600">Professional marketing, qualified buyers, and all paperwork handled end‑to‑end.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Photos & Video</span>
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Market Pricing</span>
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Buyer Screening</span>
-            </div>
-          </div>
-          
-          <!-- Service: Rent/Lease -->
-          <div class="bg-white rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:border-brand-500 border border-slate-200 reveal-on-scroll card-hover" style="animation-delay: 300ms;">
-            <div class="w-12 h-12 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.97-.63 1.563-.43A6.002 6.002 0 0121 11.25v1.5m-1.5-6a.75.75 0 00-1.5 0v.75a.75.75 0 001.5 0v-.75z" /></svg>
-            </div>
-            <h3 class="mt-5 text-xl font-bold text-slate-900">Rent / Lease</h3>
-            <p class="mt-2 text-slate-600">Commercial and residential leasing with tenant verification and agreement support.</p>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Office</span>
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Retail</span>
-              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Residential</span>
-            </div>
-          </div>
+
+        <h3 class="mt-5 text-xl font-bold" style="color:#57452D;">Buy Property</h3>
+
+        <p class="mt-2" style="color:#57452D;">
+          We shortlist only verified projects, schedule seamless site visits, negotiate the best price, and assist you till
+          possession—giving buyers complete support & transparency.
+        </p>
+
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Primary Market</span>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Resale Deals</span>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Investment Advice</span>
         </div>
       </div>
-    </section>
-    
+
+      <!-- SELL PROPERTY -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:border-brand-500 reveal-on-scroll card-hover" style="animation-delay: 150ms;">
+        <div class="w-12 h-12 rounded-lg bg-[#F4EDE3] flex items-center justify-center">
+          <!-- New Sell Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="#57452D" stroke-width="1.7">
+            <path d="M12 3l9 7-9 7-9-7 9-7z"/>
+            <path d="M3 17l9 7 9-7"/>
+          </svg>
+        </div>
+
+        <h3 class="mt-5 text-xl font-bold" style="color:#57452D;">Sell Property</h3>
+
+        <p class="mt-2" style="color:#57452D;">
+          We help sellers find qualified buyers faster through strong marketing, professional photos, pricing strategy,
+          and complete documentation support until the sale is closed.
+        </p>
+
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Premium Marketing</span>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Verified Buyers</span>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Paperwork Support</span>
+        </div>
+      </div>
+
+      <!-- RENT / LEASE -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 transition-all duration-300 hover:shadow-2xl hover:border-brand-500 reveal-on-scroll card-hover" style="animation-delay: 300ms;">
+        <div class="w-12 h-12 rounded-lg bg-[#F4EDE3] flex items-center justify-center">
+          <!-- New Rent Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="#57452D" stroke-width="1.7">
+            <path d="M4 10v10h16V10L12 4 4 10z"/>
+            <path d="M12 14v6"/>
+            <path d="M8 18h8"/>
+          </svg>
+        </div>
+
+        <h3 class="mt-5 text-xl font-bold" style="color:#57452D;">Rent / Lease</h3>
+
+        <p class="mt-2" style="color:#57452D;">
+          Perfect for companies, families, and investors—renting made easy with verified tenants, legal assistance, and
+          fast property closures for both commercial & residential spaces.
+        </p>
+
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Office Spaces</span>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Retail Units</span>
+          <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-[#EFE9E2] text-[#57452D]">Residential Homes</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <!-- Featured Listings Section -->
     <section class="py-16 sm:py-24 bg-white" id="featured">
       <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -755,7 +831,8 @@ A simple, transparent, and milestone-driven flow designed for your convenience a
       <!-- Column 1: About -->
       <div class="reveal-on-scroll">
         <div class="flex items-center gap-3">
-          <img src="assets/mutha reality logos (1).svg" alt="Logo" class="global-logo">
+
+          <img src="assets/mutha reality name logo.png" alt="Logo" class="global-logo" style="height: 200px; width: auto;" >
           <div>
             <h1 class="text-lg font-bold text-slate-900 sr-only">Mutha Realty</h1>
             <div class="text-xs font-medium text-slate-500 -mt-1">Buy • Sell • Rent • Lease</div>
@@ -777,10 +854,11 @@ A simple, transparent, and milestone-driven flow designed for your convenience a
         <div class="mt-4">
           <h3 class="font-semibold text-slate-900">Contact</h3>
           <a href="tel:+918888933445" class="text-brand-600 hover:text-brand-700 block text-sm font-medium">
-            Call: +91 88889 33445
+                    Call: +91 88889 33445 / +91 99228 85926 
+                   
           </a>
           <a href="mailto:info@mutharealty.com" class="text-brand-600 hover:text-brand-700 block text-sm font-medium">
-            Email: info@mutharealty.com
+            Email: rspurohit05@gmail.com
           </a>
         </div>
       </div>
@@ -850,6 +928,7 @@ A simple, transparent, and milestone-driven flow designed for your convenience a
 
   </div>
 </footer>
+
 
 
 
